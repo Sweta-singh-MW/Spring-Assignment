@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link rel="stylesheet" href="Resume.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="Resume.js"></script>
+</head>
+
+<body>
+  <section class="" id="home">
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Resume Maker</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container w-50 my-5">
+      <h3 class="my-6">Previous Resume</h3>
+      <ul id="list1" class="list-group">
+
+      </ul>
+    </div>
+  </section>
+
+  <div id="container" class="container  w-50 my-5">
+    <h3 class="my-6">Let's create a Resume</h3>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="myText" placeholder="Some text">
+        <span class="text-danger"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" placeholder="Some text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="dob">Date of Birth:</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="myDOB">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="add">Address:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="myAdd">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Phone:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="myPhone" pattern="[0-9]{10}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">E-mail:</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="myemail">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit" onclick="myFunction(this)" />
+    </div>
+
+  </div>
+  <div class="container-2" id="container-2">
+    <div class="resume">
+      <div class="left">
+        <img src="Businesswoman-1-icon.png" height="150" width="150">
+      </div>
+      <div class="mid">
+        <p id="full-name" class="bold "> SARAH JEFFERSON</p>
+        <p class="colo">Designer</p>
+      </div>
+      <div>
+        <p><b>Name:</b> <span id="full-name-1">Jefferson Sarah</p>
+        <p class="padding2"><b>Date of birth:</b> <span id="daob"> June 6,1970 </p>
+        <p class="padding2"><b>Address:</b><span id="addr"> San Fransico,CA 94012,US</p>
+        <p class="padding2"><b>Phone:</b><span id="ph"> +1-541-754-3010</p>
+        <p class="padding2"><b>E-mail:</b><span id="mail"> wpspacetemplates@gmail.com</p>
+      </div>
+    </div>
+    <div class="resume">
+      <p class="semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam nobis adipisci minus
+        esse, commodi voluptate at maiores quod. Officiis error aperiam odio dolorum sapiente hic saepe? Excepturi, eius
+        reiciendis!
+      </p>
+    </div>
+    <div class="resume">
+      <div class="fleft">
+        <div class="lup">
+          <div class="bold padding1 bgc">
+            <font class="p" color="white"> <i class='fa fa-angle-down' style='font-size:36px;color:blue'></i>Employment
+            </font>
+          </div>
+          <div class="text">
+            <p><br> <i class='fa fa-angle-right' style='font-size:30px;color:blue'></i>There are many variations</p>
+          </div>
+          <div class="year padding">2003-2007</div>
+          <p class="q">Director Of Department</p>
+          <p class="padding1 padding semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            praesentium ipsum illo omnis animi unde! Ea sint obcaeca.
+          </p>
+          <hr>
+          <div class="text padding">
+            <p> <i class='fa fa-angle-right' style='font-size:30px;color:blue'></i>Cooper Union</p>
+          </div>
+          <div class="year padding">2001-Present</div>
+          <p class="q">Programmer</p>
+          <p class="padding1 padding semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            praesentium ipsum.
+          </p>
+
+        </div>
+        <div class="lbottom">
+
+          <div class="bold padding1 bgc">
+            <font color="white"><i class='fa fa-angle-down' style='font-size:36px ;color:green'></i> Education</font>
+          </div>
+          <div class="text">
+            <p><br> <i class='fa fa-angle-right' style='font-size:30px;color:green'></i>Dummy text</p>
+          </div>
+          <div class="year padding">2001-Present</div>
+          <p class="q">Web Design</p>
+          <p class="padding1 padding semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            corrupti quas facilis minus.
+          </p>
+          <hr>
+          <div class=" padding text">
+            <p> <i class='fa fa-angle-right' style='font-size:30px;color:green'></i>Loreum Ipsum</p>
+          </div>
+          <div class="year padding">2001-Present</div>
+          <p class="q">Graphic Design</p>
+          <p class="padding semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corrupti quas
+            facilis
+
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="fright">
+        <div class="right1">
+          <p class="bold padding1">Programming Skills</p>
+          <p>HTML</p>
+          <div class="container">
+            <div class="skills html">90%</div>
+          </div>
+          <p class="padding">CSS</p>
+          <div class="container">
+            <div class="skills css">80%</div>
+          </div>
+          <p class="padding">Javascript</p>
+          <div class="container">
+            <div class="skills js">65%</div>
+          </div>
+          <div class="padding1 padding">PHP
+            <div class="container">
+              <div class="skills php">60%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right2">
+          <p class="bold padding1">Graphic Skills</p>
+          <ul class="semi-bold">
+            <li class="style">Adobe Photoshop</li>
+            <li class="style">Adobe Illustrator</li>
+            <li class="style">Adobe Indesign</li>
+            <li class="style">Corel Draw</li>
+            <li class="style padding1">3D Max</li>
+          </ul>
+
+        </div>
+        <div class="right3">
+          <div class="bold padding1">Language Skills</div>
+          <div class="semi-bold">English <span class="dot blue"></span> <span class="dot blue"></span> <span
+              class="dot blue"></span> <span class="dot blue"></span> <span class="dot"></span>
+          </div>
+          <div class="padding semi-bold"> French <span class="dot yellow"></span> <span class="dot yellow"></span> <span
+              class="dot yellow"></span> <span class="dot"></span> <span class="dot"></span>
+          </div>
+          <div class="padding semi-bold">Spanish <span class="dot green"></span> <span class="dot green"></span> <span
+              class="dot green"></span> <span class="dot green"></span> <span class="dot"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="dom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
